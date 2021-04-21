@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {}
+    "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {
+    "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
+        "projectUniqueName": "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
         "projectName": "LMS_fge",
-        "projectPath": "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
-        "packagesPath": "C:\\Users\\lobo_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\obj\\",
+        "projectPath": "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
+        "packagesPath": "C:\\Users\\Gustavo Bañuelos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\lobo_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Gustavo Bañuelos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -49,19 +50,21 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.10, )"
+              "version": "[3.1.13, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[3.1.10, )"
+              "version": "[3.1.13, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.10, )"
+              "version": "[3.1.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.10, )"
+              "version": "[3.1.13, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LMS_fge.Models.User;
 
 namespace LMS_fge
 {
@@ -30,8 +31,32 @@ namespace LMS_fge
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+                        
+            /*
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            */
+            ///////////////////
+            
+
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            // Configure Identity Options
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequiredUniqueChars = 4;
+                // User settings
+                options.User.RequireUniqueEmail = true;
+            });
+
+            //////////////////
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -63,13 +88,7 @@ namespace LMS_fge
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                /*
-                endpoints.MapAreaControllerRoute(
-                    name: "Admin",
-                    areaName: "Admin",
-                    pattern: "{controller=Admin}/{action=Login}"
-                    );
-                */
+                
 
                 endpoints.MapRazorPages();
 
