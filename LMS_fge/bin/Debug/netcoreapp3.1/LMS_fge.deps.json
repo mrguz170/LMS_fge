@@ -297,6 +297,11 @@
         "runtime": {
           "LMS_fge.dll": {}
         },
+        "resources": {
+          "en/LMS_fge.resources.dll": {
+            "locale": "en"
+          }
+        },
         "compile": {
           "LMS_fge.dll": {}
         }

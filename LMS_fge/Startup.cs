@@ -13,6 +13,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LMS_fge.Models.User;
+using LMS_fge.Resources;
+using LMS_fge.Extensions.ValidationMetadataProvider;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LMS_fge
 {
@@ -36,6 +39,8 @@ namespace LMS_fge
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             */
+
+
             ///////////////////
             
 
@@ -54,6 +59,29 @@ namespace LMS_fge
                 options.Password.RequiredUniqueChars = 4;
                 // User settings
                 options.User.RequireUniqueEmail = true;
+            });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                // Review time
+                options.LoginPath = "/Identity/Account/Login";
+                options.LogoutPath = "/Identity/Account/Logout";
+                options.AccessDeniedPath = "/Identity/Account/AccessDenied";
+            });
+
+            // Configure base controllers and languaje
+            services.AddControllersWithViews(opt =>
+            {
+                opt.ModelMetadataDetailsProviders.Add(
+                   new CustomValidationMetadataProvider(typeof(SharedResources)));
+            }).AddViewLocalization()
+              .AddDataAnnotationsLocalization()
+              .ConfigureModelBindingMessages();
+
+            // Configure base Pages
+            services.AddRazorPages(options =>
+            {
+                options.RootDirectory = "/Pages";
             });
 
             //////////////////

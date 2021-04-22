@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {}
+    "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {
+    "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
+        "projectUniqueName": "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
         "projectName": "LMS_fge",
-        "projectPath": "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
-        "packagesPath": "C:\\Users\\Gustavo Bañuelos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gustavo Bañuelos\\Documents\\Fiscalia\\LMS\\LMS_fge\\LMS_fge\\obj\\",
+        "projectPath": "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\LMS_fge.csproj",
+        "packagesPath": "C:\\Users\\lobo_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lobo_\\Documents\\Proyectos Fiscalia\\LMS\\LMS_fge\\LMS_fge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gustavo Bañuelos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\lobo_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
